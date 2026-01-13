@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  
+}
+
+
+.section {
+  background: rgb(141, 0, 0);
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  
+}
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgb(2, 196, 255);
+}
+
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
