@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #000000;
+  background: #2c2c2c;
   color: white;
 }
 
@@ -47,7 +47,9 @@ body {
   transform: scale(1.03);
   box-shadow: 0 0 25px rgb(2, 196, 255);
 }
-
+p{
+   color:black
+}
 
 h1 {
   margin-bottom: 5px;
@@ -69,4 +71,106 @@ ul {
 
 ul li {
   margin: 5px 0;
+}
+ .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;          /* spacing ng icons */
+}
+
+.socials a {
+  font-size: 26px;   /* size ng icons */
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+h3{
+  color:black
+}
+
+/* FIXED PROJECTS SECTION */
+.projects-section {
+  max-height: 400px;        /* height ng whole section */
+  display: flex;
+  flex-direction: column;
+}
+
+/* SCROLLABLE AREA SA LOOB */
+.projects-scroll {
+  margin-top: 15px;
+  overflow-y: auto;         /* ITO ANG SCROLL */
+  padding-right: 10px;
+}
+
+/* OPTIONAL: GANDA NG SCROLL */
+.projects-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projects-scroll::-webkit-scrollbar-thumb {
+  background: #1e90ff;
+  border-radius: 10px;
+}
+
+
+
+.name-animate {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  animation: pulseLetter 0.8s infinite alternate;
+}
+
+.name-animate {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 15px #0ff;
+  animation: neonTyping 1s infinite alternate;
+}
+
+@keyframes neonTyping {
+  0% {
+    text-shadow: 
+      0 0 5px #0ff,
+      0 0 10px #0ff;
+  }
+  100% {
+    text-shadow: 
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 30px #0ff;
+  }
 }
